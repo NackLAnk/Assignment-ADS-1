@@ -9,7 +9,7 @@
 2. Find the average value of an array.
 3. Determine if a number is prime or composite.
 4. Find the factorial of a number.
-5. Find the nth number in the Fibonacci sequence.
+5. Find the n-th number in the Fibonacci sequence.
 6. Raise a number to a certain power.
 7. Reverse an array.
 8. Determine if a string contains any letters.
@@ -17,7 +17,7 @@
 10. Find Greatest Common Divisor (GCD).
 
 
-# The first Problem:
+# Problem 1: Finding the minimum element in an array
 ``` java
 
 public class Problem1 {
@@ -51,7 +51,7 @@ public class Problem1 {
 int[] array = {5, 8, 3, 1, 9, 2};
 int min = Problem1.getMin(array.length, array); // min = 1
 ```
-# The second problem
+# Problem 2: Calculating the average of an array
 ``` java
 public class Problem2 {
     // Taking array from main, adds number and deciding it by array length
@@ -65,7 +65,7 @@ public class Problem2 {
 }
 ```
 > To use this code, you need to have an array of integers. You can call the `getAverage` method and pass the array as an argument. The method will calculate the average of the elements in the array and return it as a double.
-### Example usage:
+### Example usage of code:
 ``` java
 int[] myArray = {1, 2, 3, 4, 5};
 double average = Problem2.getAverage(myArray);
@@ -75,7 +75,7 @@ System.out.println("The average is: " + average);
 ``` java
 The average is: 3.0
 ``` 
-# The third Problem
+# Problem 3: Checking if a number is prime or composite
 > This class contains a static method for checking whether a given number is prime or composite.
 #### `public static String getPrimeComposite(int n)`
 > This method takes an integer `n` as input and returns a string indicating whether `n` is prime or composite. If n is less than or equal to 1, the method returns `"composite"`. Otherwise, the method checks for divisors of n up to the square root of n. If a divisor is found, the method returns `"composite"`. If no divisors are found, the method returns `"prime"`.
@@ -92,7 +92,7 @@ String result1 = Problem3.getPrimeComposite(n1); // result1 = "prime"
 int n2 = 15;
 String result2 = Problem3.getPrimeComposite(n2); // result2 = "composite"
 ```
-# Problem Number Four
+# Problem 4: Calculating the factorial of a number
 ```java
 public class Problem4 {
      // Returns the factorial of the given number using recursion.
@@ -116,7 +116,7 @@ public class Problem4 {
  * An integer value that represents the factorial of the given number `n`.
  ### Descriptiob: 
  * The `getFactorial` method uses a recursive approach to calculate the factorial of a given number. The method checks if the base case of `n=0` is reached, in which case the method returns 1. Otherwise, the method calls itself with the argument `(n-1)` and multiplies the result with the value of `n`. This recursive call continues until the base case is reached.
-### Problem Number Five
+# Problem 5: Finding the n-th element in the Fibonacci sequence
 ```java
 public class Problem5 {
     //Finds the n-th element in the Fibonacci sequence using recursion.
@@ -131,3 +131,45 @@ public class Problem5 {
     }
 }
 ```
+* This program defines a method `getFibonacci` that takes an integer `n`, and returns the n-th element in the Fibonacci sequence. It uses recursion to calculate the sum of the previous two elements in the sequence until it reaches the base cases of 0 and 1, which return 0 and 1, respectively.
+* 
+### Example usage of code:
+```java
+int n = 6;
+        int fibonacciNum = Problem5.getFibonacci(n);
+        System.out.println("The " + n + "th Fibonacci number is " + fibonacciNum);
+```
+### Output:
+```java
+Fibonacci is: 8
+```
+# Problem 6: Raise a number to a certain power
+```java
+public class Problem6 {
+    // this method taking a number then square it by "n", then return the Answer
+    public static double getSquare(double n, int n_2) {
+        if (n_2 == 0) { // checking if degree is 0
+            return 1;
+        }
+        double Ans = 1; // created variable to take future answer
+        while (n_2 > 0) { // loop to check if degree more than 0
+            if (n_2 % 2 == 1) { // the while loop, the method checks if n_2 is odd by using the modulus operator %
+                Ans *= n;
+            }
+            n *= n; // the method multiplies n by itself to update its value, and divides n_2 by 2
+            n_2 /= 2;
+        }
+        return Ans; // return the Answer
+    }
+}
+```
+* This class contains a method to calculate the square of a given number with a specified degree using a faster algorithm called "Exponentiation by squaring".
+### Method:
+```java
+public static double getSquare(double n, int n_2)
+```
+### Parameters:
+* `n` - a double value that represents the base number to be squared
+* `n_2` - an integer value that represents the degree of the squared number
+### Description:
+> The method first checks to see if the power of `n_2` is 0. If so, the method returns 1. Otherwise, it initializes the Ans variable to 1 to store the future response. It then enters the while loop to check if the power of `n_2` is greater than 0. Inside the while loop, the method checks if `n_2` is odd using the % modulo operator. If so, the method multiplies Ans by `n`. It then multiplies n by itself to update its value, and divides `n_2` by 2. This process continues until `n_2` is 0. Finally, the method returns Ans as the square of `n` to the power of `n_2`.
