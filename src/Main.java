@@ -5,9 +5,9 @@ public class Main {
         System.out.println("Welcome! Please, select the problem task.");
         System.out.println("Example: Problem1 = 1, Problem2 = 2");
         Scanner scanner = new Scanner(System.in); // Create overall new Scanner to read input
-        String Answer = scanner.nextLine();
+        String Answer = scanner.nextLine(); // take user Answer
 
-            switch (Answer) {
+            switch (Answer) { // there are a cases with problem Tasks
                 case "1": // Problem1
                     System.out.print("Size of the array (Example: 5 or more less/more): "); // Prompt the user to enter the size of the array
                     int n = scanner.nextInt(); // Read the size of the array
@@ -86,27 +86,27 @@ public class Main {
                         System.out.println("yes, there are letters here");
                     }
                     break;
-                case "9":
+                case "9": // Problem9
                     System.out.print("Please, write a n number 1/2: "); // there we write int "n" variable
                     int n9 = scanner.nextInt();
                     System.out.print("Please, write a k number 2/2: "); // there we write int "k" variable
                     int n9_2 = scanner.nextInt();
 
-                    int binomialAnswer = Problem9.getCoefficient(n9, n9_2);
-                    System.out.println("binomial Coefficient is: "+ binomialAnswer);
+                    int binomialAnswer = Problem9.getCoefficient(n9, n9_2); // Call the getCoefficient method from Problem9 to found binomial coefficient
+                    System.out.println("binomial Coefficient is: "+ binomialAnswer); // Print the Answer
                     break;
-                case "10":
-                    System.out.print("Please, write the first number: ");
-                    int n10 = scanner.nextInt();
-                    System.out.print("Please, write the second number: ");
-                    int n10_2 = scanner.nextInt();
+                case "10": // Problem10
+                    System.out.print("Please, write the first number: "); // Write a first GSD number
+                    int n10 = scanner.nextInt(); // take Answer from the console
+                    System.out.print("Please, write the second number: "); // Write a second GSD number
+                    int n10_2 = scanner.nextInt(); // take Answer from the console
 
-                    int GSDAnswer = Problem10.getGSD(n10, n10_2);
-                    System.out.println("GSD is: "+ GSDAnswer);
+                    int GSDAnswer = Problem10.getGSD(n10, n10_2); // Call the gestGSD method from Problem10 class to found GSD in this 2 int variables
+                    System.out.println("GSD is: "+ GSDAnswer); // Print the Answer
                     break;
-
             }
 
-
+                    // Hi! if you have reached this comment
+                    // then Thank you very much for the Analysis and I wish you a good day!
     }
 }
