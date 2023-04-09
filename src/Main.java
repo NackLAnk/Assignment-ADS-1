@@ -53,6 +53,15 @@ public class Main {
                 int fibonacciAns = Problem5.getFibonacci(n5); // call the getFibonacci method from Problem5 class to find fibonacci with recursion
                 System.out.println("fibonacci is: "+fibonacciAns); // print the Answer
                 break;
+            case "6":
+                System.out.println("Please, write the number: "); // there we write number
+                double n6 = scanner.nextInt(); // taking number from the console
+
+                System.out.println("Please, write the square number: "); // there we write degree number
+                int n6_2 = scanner.nextInt(); // taking number from the console
+
+                double squareAnswer = Problem6.getSquare(n6, n6_2); // call the getSquare method from Problem6 class to find degree with 2 variable
+                System.out.println("degree is: "+ squareAnswer); // print the Answer
         }
 
 
