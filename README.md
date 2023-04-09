@@ -17,6 +17,7 @@ The 10 problems are as follows:
 10. Find Greatest Common Divisor (GCD).
 the first Problem:
 <pre>
+(```) java
 public class Problem1 {
     // Get Array from Main, and founding minimum in array
     public static int getMin(int n, int[] arr) { // Define the getMin method
