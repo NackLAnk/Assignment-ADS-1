@@ -43,9 +43,9 @@ public class Problem1 {
 
 > This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
 
-1. > `n`: the size of the array * `arr`
-2. > `arr`: the integer array containing the values to search for the minimum
-3. > If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
+> `n`: the size of the array * `arr`
+> `arr`: the integer array containing the values to search for the minimum
+> If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
 ### Example usage of code:
 ``` java
 int[] array = {5, 8, 3, 1, 9, 2};
