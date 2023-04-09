@@ -62,6 +62,19 @@ public class Main {
 
                 double squareAnswer = Problem6.getSquare(n6, n6_2); // call the getSquare method from Problem6 class to find degree with 2 variable
                 System.out.println("degree is: "+ squareAnswer); // print the Answer
+                break;
+            case "7":
+                System.out.print("Size of the array (Example: 5 or more less/more): "); // Prompt the user to enter the size of the array
+                int n7 = scanner.nextInt(); // Read the size of the array
+
+                int[] arr3 = new int[n7];
+                for (int i = 0; i < n7; i++) { // Use a for loop to prompt the user to enter the value for each element of the array
+                    System.out.print("Element #" + (i + 1) + ": ");
+                    arr3[i] = scanner.nextInt();
+                }
+                Problem7.reverseArray(arr3.length, arr3);  // Use the reverseArray method to reverse the array
+                break;
+
         }
 
 
