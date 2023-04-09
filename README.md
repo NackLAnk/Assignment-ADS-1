@@ -16,7 +16,7 @@ The 10 problems are as follows:
 9. Find Binomial Coefficient.
 10. Find Greatest Common Divisor (GCD).
 the first Problem:
-```
+``` java
 <pre>
 public class Problem1 {
     // Get Array from Main, and founding minimum in array
@@ -33,3 +33,5 @@ public class Problem1 {
 }
 ```
 </pre>
+<h1>Methods<h1>
+The Problem1 class is a utility class for finding the minimum value in an array.
