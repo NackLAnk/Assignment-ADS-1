@@ -87,6 +87,13 @@ public class Main {
                     }
                     break;
                 case "9":
+                    System.out.print("Please, write a n number 1/2: "); // there we write int "n" variable
+                    int n9 = scanner.nextInt();
+                    System.out.print("Please, write a k number 2/2: "); // there we write int "k" variable
+                    int n9_2 = scanner.nextInt();
+
+                    int binomialAnswer = Problem9.getCoefficient(n9, n9_2);
+                    System.out.println("binomial Coefficient is: "+ binomialAnswer);
             }
 
 
