@@ -1,6 +1,6 @@
 # Assignment-ADS-1
 
-> This program contains eight problems that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
+* This program contains eight problems that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
 
 > To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by > typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
 
@@ -37,7 +37,7 @@ public class Problem1 {
 ```
 # Problem Class
 
-> The Problem1 class is a utility class for finding the minimum value in an array.
+* The Problem1 class is a utility class for finding the minimum value in an array.
 
 # Methods
 
@@ -45,7 +45,7 @@ public class Problem1 {
 
 > `n`: the size of the array * `arr`
 > `arr`: the integer array containing the values to search for the minimum
-> If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
+* If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
 ### Example usage of code:
 ``` java
 int[] array = {5, 8, 3, 1, 9, 2};
@@ -116,3 +116,18 @@ public class Problem4 {
  * An integer value that represents the factorial of the given number `n`.
  ### Descriptiob: 
  * The `getFactorial` method uses a recursive approach to calculate the factorial of a given number. The method checks if the base case of `n=0` is reached, in which case the method returns 1. Otherwise, the method calls itself with the argument `(n-1)` and multiplies the result with the value of `n`. This recursive call continues until the base case is reached.
+### Problem Number Five
+```java
+public class Problem5 {
+    //Finds the n-th element in the Fibonacci sequence using recursion.
+    public static int getFibonacci(int n) {
+        if (n == 0) { // base case for 0 and 1
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return getFibonacci(n-1) + getFibonacci(n-2); // recursive case
+        }
+    }
+}
+```
