@@ -32,8 +32,13 @@ public class Main {
                 double average = Problem2.getAverage(arr2); // Call the getAverage method from Problem2 class to find average
                 System.out.println("Average: "+ average); // print the average of the array
                 break;
-            case "3":
+            case "3": //problem3
+                System.out.println("Please, write the number: "); // there we write number, to check is this a prime or composite
+                int n3 = scanner.nextInt(); // taking number from the console
 
+                String PrimeOrComposite = Problem3.getPrimeComposite(n3); // Call the getPrimeComposite method from Problem3 class to identify is number prime or composite
+                System.out.println(PrimeOrComposite); // print the Answer
+                break;
         }
 
 
