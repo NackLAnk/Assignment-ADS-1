@@ -17,7 +17,7 @@ The 10 problems are as follows:
 10. Find Greatest Common Divisor (GCD).
 
 
-<TITLE>The first Problem:<TITLE>
+<TITLE>The first Problem:</TITLE>
 ``` java
 <pre>
 public class Problem1 {
@@ -35,6 +35,6 @@ public class Problem1 {
 }
 ```
 </pre>
-<TITLE>Problem Class<TITLE>
+<TITLE>Problem Class</TITLE>
 The Problem1 class is a utility class for finding the minimum value in an array.
-<TITLE>Methods<TITLE>
+<TITLE>Methods</TITLE>
