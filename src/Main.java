@@ -29,7 +29,7 @@ public class Main {
                     System.out.print("Element #" + (i + 1) + ": ");
                     arr2[i] = scanner.nextInt();
                 }
-                double average = Problem2.getAverage(arr2.length, arr2); // Call the getAverage method from Problem2 class to find average
+                double average = Problem2.getAverage(arr2); // Call the getAverage method from Problem2 class to find average
                 System.out.println("Average: "+ average); // print the average of the array
                 break;
             case "3":
