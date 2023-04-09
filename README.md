@@ -17,9 +17,9 @@ The 10 problems are as follows:
 10. Find Greatest Common Divisor (GCD).
 
 
-The first Problem:
+# The first Problem:
 ``` java
-<pre>
+
 public class Problem1 {
     // Get Array from Main, and founding minimum in array
     public static int getMin(int n, int[] arr) { // Define the getMin method
@@ -33,14 +33,13 @@ public class Problem1 {
     }
 
 }
-</pre>
-```
 
-Problem Class
+```
+# Problem Class
 
 The Problem1 class is a utility class for finding the minimum value in an array.
 
-Methods
+# Methods
 
 This method takes in two parameters, an integer n and an integer array arr. It returns the minimum value in the array arr.
 
