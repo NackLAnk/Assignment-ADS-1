@@ -39,6 +39,17 @@ public class Main {
                 String PrimeOrComposite = Problem3.getPrimeComposite(n3); // Call the getPrimeComposite method from Problem3 class to identify is number prime or composite
                 System.out.println(PrimeOrComposite); // print the Answer
                 break;
+            case "4": // Problem4
+                System.out.println("Please, write the number: "); // there we write number, to recursion number
+                int n4 = scanner.nextInt(); // taking number from the console
+
+                int numAnswer = Problem4.getFactorial(n4); // call the getFactorial method from Problem4 call to recursive it to factorial number
+                System.out.println("factorial number is: "+numAnswer); // print the Answer
+                break;
+            case "5":
+
+
+
         }
 
 
