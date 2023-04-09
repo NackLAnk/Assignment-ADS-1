@@ -111,8 +111,8 @@ public class Problem4 {
  public static int getFactorial(int n)
  ```
  ### Parameters:
- `n`: An integer value to calculate the factorial of.
+ * `n`: An integer value to calculate the factorial of.
  ### Returns:
- > An integer value that represents the factorial of the given number `n`.
+ * An integer value that represents the factorial of the given number `n`.
  ### Descriptiob: 
- > The `getFactorial` method uses a recursive approach to calculate the factorial of a given number. The method checks if the base case of `n=0` is reached, in which case the method returns 1. Otherwise, the method calls itself with the argument `(n-1)` and multiplies the result with the value of `n`. This recursive call continues until the base case is reached.
+ * The `getFactorial` method uses a recursive approach to calculate the factorial of a given number. The method checks if the base case of `n=0` is reached, in which case the method returns 1. Otherwise, the method calls itself with the argument `(n-1)` and multiplies the result with the value of `n`. This recursive call continues until the base case is reached.
