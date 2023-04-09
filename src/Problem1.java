@@ -1,4 +1,5 @@
 public class Problem1 {
+    // Get Array from Main, and founding minimum in array
     public static int getMin(int n, int[] arr) { // Define the getMin method
         int a = arr[n-1]; // Set the initial value of a to be the last element of the array
 

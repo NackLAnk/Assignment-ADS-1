@@ -43,13 +43,16 @@ public class Main {
                 System.out.println("Please, write the number: "); // there we write number, to recursion number
                 int n4 = scanner.nextInt(); // taking number from the console
 
-                int numAnswer = Problem4.getFactorial(n4); // call the getFactorial method from Problem4 call to recursive it to factorial number
+                int numAnswer = Problem4.getFactorial(n4); // call the getFactorial method from Problem4 class to recursive it to factorial number
                 System.out.println("factorial number is: "+numAnswer); // print the Answer
                 break;
-            case "5":
+            case "5": //Problem5
+                System.out.println("Please, write the number: "); // there we write number, to find fibonacci
+                int n5 = scanner.nextInt(); // taking number from the console
 
-
-
+                int fibonacciAns = Problem5.getFibonacci(n5); // call the getFibonacci method from Problem5 class to find fibonacci with recursion
+                System.out.println("fibonacci is: "+fibonacciAns); // print the Answer
+                break;
         }
 
 
