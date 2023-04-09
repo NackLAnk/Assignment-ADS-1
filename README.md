@@ -41,8 +41,37 @@ The Problem1 class is a utility class for finding the minimum value in an array.
 
 # Methods
 
-This method takes in two parameters, an integer n and an integer array arr. It returns the minimum value in the array arr.
+This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
 
-n: the size of the array arr
-arr: the integer array containing the values to search for the minimum
+`n`: the size of the array * `arr`
+`arr`: the integer array containing the values to search for the minimum
 If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
+### Example usage of code:
+``` java
+int[] array = {5, 8, 3, 1, 9, 2};
+int min = Problem1.getMin(array.length, array); // min = 1
+```
+# The second problem
+``` java
+public class Problem2 {
+    // Taking array from main, adds number and deciding it by array length
+    public static double getAverage(int[] arr) {
+        int sum = 0; // Initialize the sum of the array elements
+        for (int i = 0; i < arr.length; i++) { // Loop over the array elements and add them to the sum
+            sum += arr[i];
+        }
+        return (double) sum / arr.length; // Calculate the average deciding by the length of array, then return Answer
+    }
+}
+```
+To use this code, you need to have an array of integers. You can call the `getAverage` method and pass the array as an argument. The method will calculate the average of the elements in the array and return it as a double.
+### Example usage:
+``` java
+int[] myArray = {1, 2, 3, 4, 5};
+double average = Problem2.getAverage(myArray);
+System.out.println("The average is: " + average);
+```
+### output:
+``` java
+The average is: 3.0
+``` 
