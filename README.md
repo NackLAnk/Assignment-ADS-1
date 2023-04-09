@@ -74,9 +74,25 @@ System.out.println("The average is: " + average);
 The average is: 3.0
 ``` 
 # Problem 3: Checking if a number is prime or composite
+```java
+public class Problem3 {
+    // Checking a number, then identifying it Prime or Composite
+    public static String getPrimeComposite(int n){
+        if (n <= 1) { // Check if n is less than or equal to 1
+            return "composite";
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) { // Check for divisors up to the square root of n
+            if (n % i == 0) {
+                return "composite";
+            }
+        }
+        return "prime"; // If no divisors were found, n is prime
+    }
+}
+```
 > This class contains a static method for checking whether a given number is prime or composite.
 #### `public static String getPrimeComposite(int n)`
-> This method takes an integer `n` as input and returns a string indicating whether `n` is prime or composite. If n is less than or equal to 1, the method returns `"composite"`. Otherwise, the method checks for divisors of n up to the square root of n. If a divisor is found, the method returns `"composite"`. If no divisors are found, the method returns `"prime"`.
+* This method takes an integer `n` as input and returns a string indicating whether `n` is prime or composite. If n is less than or equal to 1, the method returns `"composite"`. Otherwise, the method checks for divisors of n up to the square root of n. If a divisor is found, the method returns `"composite"`. If no divisors are found, the method returns `"prime"`.
 ### Parameters
 `n` : an integer to check for primality or compositeness.
 ### Returns
