@@ -15,7 +15,9 @@ The 10 problems are as follows:
 8.Determine if a string contains any letters.
 9. Find Binomial Coefficient.
 10. Find Greatest Common Divisor (GCD).
-the first Problem:
+
+
+<TITLE>The first Problem:<TITLE>
 ``` java
 <pre>
 public class Problem1 {
@@ -33,5 +35,6 @@ public class Problem1 {
 }
 ```
 </pre>
-<h1>Methods<h1>
+<TITLE>Problem Class<TITLE>
 The Problem1 class is a utility class for finding the minimum value in an array.
+<TITLE>Methods<TITLE>
