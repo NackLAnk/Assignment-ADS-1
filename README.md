@@ -2,7 +2,7 @@
 
 * This program contains `10 problems` that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
 
-> To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by > typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
+> To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
 
 ### The 10 problems are as follows:
 1. Find the minimum value in an array.
@@ -35,16 +35,14 @@ public class Problem1 {
 }
 
 ```
-# Problem Class
+> The Problem1 class is a utility class for finding the minimum value in an array.
 
-* The Problem1 class is a utility class for finding the minimum value in an array.
-
-# Methods
-
-> This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
-
-> `n`: the size of the array * `arr`
-> `arr`: the integer array containing the values to search for the minimum
+### Methods:
+* This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
+### Parameters:
+* `n`: the size of the array * `arr`
+* `arr`: the integer array containing the values to search for the minimum
+### Description:
 * If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
 ### Example usage of code:
 ``` java
@@ -131,7 +129,7 @@ public class Problem5 {
     }
 }
 ```
-* This program defines a method `getFibonacci` that takes an integer `n`, and returns the n-th element in the Fibonacci sequence. It uses recursion to calculate the sum of the previous two elements in the sequence until it reaches the base cases of 0 and 1, which return 0 and 1, respectively.
+> This program defines a method `getFibonacci` that takes an integer `n`, and returns the n-th element in the Fibonacci sequence. It uses recursion to calculate the sum of the previous two elements in the sequence until it reaches the base cases of 0 and 1, which return 0 and 1, respectively.
 * 
 ### Example usage of code:
 ```java
