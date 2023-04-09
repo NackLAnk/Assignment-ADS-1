@@ -94,6 +94,17 @@ public class Main {
 
                     int binomialAnswer = Problem9.getCoefficient(n9, n9_2);
                     System.out.println("binomial Coefficient is: "+ binomialAnswer);
+                    break;
+                case "10":
+                    System.out.print("Please, write the first number: ");
+                    int n10 = scanner.nextInt();
+                    System.out.print("Please, write the second number: ");
+                    int n10_2 = scanner.nextInt();
+
+                    int GSDAnswer = Problem10.getGSD(n10, n10_2);
+                    System.out.println("GSD is: "+ GSDAnswer);
+                    break;
+
             }
 
 
