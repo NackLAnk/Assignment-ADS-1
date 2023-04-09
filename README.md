@@ -77,7 +77,7 @@ The average is: 3.0
 ``` 
 # The third Problem
 > This class contains a static method for checking whether a given number is prime or composite.
-> `public static String getPrimeComposite(int n)`
+#### `public static String getPrimeComposite(int n)`
 > This method takes an integer `n` as input and returns a string indicating whether `n` is prime or composite. If n is less than or equal to 1, the method returns `"composite"`. Otherwise, the method checks for divisors of n up to the square root of n. If a divisor is found, the method returns `"composite"`. If no divisors are found, the method returns `"prime"`.
 ### Parameters
 `n` : an integer to check for primality or compositeness.
@@ -93,3 +93,26 @@ int n2 = 15;
 String result2 = Problem3.getPrimeComposite(n2); // result2 = "composite"
 ```
 # Problem Number Four
+```java
+public class Problem4 {
+     // Returns the factorial of the given number using recursion.
+    public static int getFactorial(int n) {
+        if (n == 0) { // Base case: if n is 0, return 1
+            return 1;
+        } else {
+            return n * getFactorial(n - 1); // Recursive case: multiply n with the factorial of (n-1)
+        }
+    }
+}
+```
+ > class provides a method to calculate the factorial of a given number using recursion.
+ ### Method:
+ ```java
+ public static int getFactorial(int n)
+ ```
+ ### Parameters:
+ `n`: An integer value to calculate the factorial of.
+ ### Returns:
+ > An integer value that represents the factorial of the given number `n`.
+ ### Descriptiob: 
+ > The `getFactorial` method uses a recursive approach to calculate the factorial of a given number. The method checks if the base case of `n=0` is reached, in which case the method returns 1. Otherwise, the method calls itself with the argument `(n-1)` and multiplies the result with the value of `n`. This recursive call continues until the base case is reached.
