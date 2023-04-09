@@ -9,7 +9,7 @@ public class Main {
 
         switch(Answer) {
             case "1":
-                System.out.print("size of the array (Example: 5 or more): "); // Prompt the user to enter the size of the array
+                System.out.print("Size of the array (Example: 5 or more): "); // Prompt the user to enter the size of the array
                 int n = scanner.nextInt(); // Read the size of the array
 
                 int[] arr = new int[n]; // Create a new integer array of the specified size
