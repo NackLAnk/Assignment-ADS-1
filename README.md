@@ -1,6 +1,6 @@
 # Assignment-ADS-1
 
-* This program contains eight problems that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
+* This program contains `10 problems` that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
 
 > To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by > typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
 
