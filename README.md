@@ -172,4 +172,111 @@ public static double getSquare(double n, int n_2)
 * `n` - a double value that represents the base number to be squared
 * `n_2` - an integer value that represents the degree of the squared number
 ### Description:
-> The method first checks to see if the power of `n_2` is 0. If so, the method returns 1. Otherwise, it initializes the Ans variable to 1 to store the future response. It then enters the while loop to check if the power of `n_2` is greater than 0. Inside the while loop, the method checks if `n_2` is odd using the % modulo operator. If so, the method multiplies Ans by `n`. It then multiplies n by itself to update its value, and divides `n_2` by 2. This process continues until `n_2` is 0. Finally, the method returns Ans as the square of `n` to the power of `n_2`.
+* The method first checks to see if the power of `n_2` is 0. If so, the method returns 1. Otherwise, it initializes the Ans variable to 1 to store the future response. It then enters the while loop to check if the power of `n_2` is greater than 0. Inside the while loop, the method checks if `n_2` is odd using the % modulo operator. If so, the method multiplies Ans by `n`. It then multiplies n by itself to update its value, and divides `n_2` by 2. This process continues until `n_2` is 0. Finally, the method returns Ans as the square of `n` to the power of `n_2`.
+# Problem 7: Reverse an array.
+```java
+public class Problem7 {
+    // this method will reverse created by user array
+    public static void reverseArray(int n, int[] arr) {
+        for (int i = n - 1; i >= 0; i--) { // Print the array in reverse order
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+> The Problem7 class contains a method called reverseArray, which takes an integer n and an integer array arr as input. This method prints the elements of the array in reverse order.
+### Method:
+```java
+public static void reverseArray(int n, int[] arr)
+```
+### Parameters:
+* `n`: An integer representing the size of the array.
+* `arr`: An integer array to be reversed.
+### Example usage of code:
+```java
+int[] arr = {1, 2, 3, 4, 5};
+Problem7.reverseArray(arr.length, arr); // prints "5 4 3 2 1"
+```
+# Problem 8: Determine if a string contains any letters.
+```java
+public class Problem8 {
+    // This method check letters in String, then return the analysis
+    public static String getDigits(String a) {
+        for (int i = 0; i < a.length(); i++) { // this loop check letters in String
+            if (!Character.isDigit(a.charAt(i))) {
+                return "yes";
+            }
+        }
+        return "no"; // if loop don't found letters, then it return "no"
+    }
+}
+```
+> Problem8 is a Java class that contains a single static method called "getDigits". This method takes a string parameter "a" and returns a string indicating if the input string contains any digits or not.
+### Method:
+```java
+public static String getDigits(String a)
+```
+### Parameters:
+`a`: a string parameter to be analyzed.
+### Example Usage of code:
+```java
+String result = Problem8.getDigits("hello123");
+System.out.println(result); // Output: yes
+
+String result2 = Problem8.getDigits("hello world");
+System.out.println(result2); // Output: no
+```
+# Problem 9: Find Binomial Coefficient.
+```java
+public class Problem9 {
+    // This method returns the binomial coefficient C(n,k) using recursion
+    public static int getCoefficient(int n, int k) {
+        if (k == 0 || k == n) { // checks if there is 0 here or if the answers do not match
+            return 1;
+        }
+        return getCoefficient(n-1, k-1) + getCoefficient(n-1, k); // Recursive case
+    }
+}
+```
+> The method uses the recursive formula C(n,k) = C(n-1,k-1) + C(n-1,k) to calculate the binomial coefficient. The base case of the recursion is when k is 0 or k is equal to n, in which case the binomial coefficient is 1.
+### Methods:
+getCoefficient(int n, int k)
+> Returns the binomial coefficient C(n,k) using recursion.
+### Parameters: 
+* The parameters of Problem9 are two integers `n` and `k` representing the values of the binomial coefficient C(n,k) to be computed.
+### Examle Usage of code:
+```java
+    Problem9 problem = new Problem9();
+    int result = problem.getCoefficient(5, 2);
+    // result will be 10
+```
+# Problem 10: Find Greatest Common Divisor (GCD)
+```java
+public class Problem10 {
+    /*  Recursive function to find the GSD of two numbers
+     *  @param a First number
+     *  @param b Second number
+     */
+    public static int getGSD(int a, int b) {
+        if (b == 0) { //
+            return a;
+        }
+        return getGSD(b, a % b);
+    }
+}
+```
+> The `Problem10` class contains a single static method `getGSD` which calculates the Greatest Common Divisor (GCD) of two given numbers `a` and `b` using recursion.
+### Parameters:
+* `getGSD`: This method takes in two integers a and b, and returns an integer that represents their greatest common divisor (GCD).
+* `a`: The first number.
+* `b`: The second number.
+### Example usage of code:
+```java
+int a = 18;
+int b = 12;
+int gcd = Problem10.getGSD(a, b);
+System.out.println("The GCD of " + a + " and " + b + " is " + gcd);
+// Output: The GCD of 18 and 12 is 6```
+
+# Coclusion
+> so, on this I finished talking about all the problems, thanks for your attention!
