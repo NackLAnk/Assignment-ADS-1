@@ -4,15 +4,15 @@ This program contains eight problems that users can choose to solve. The program
 
 To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
 
-The 10 problems are as follows:
-1.Find the minimum value in an array.
-2.Find the average value of an array.
-3.Determine if a number is prime or composite.
-4.Find the factorial of a number.
-5.Find the nth number in the Fibonacci sequence.
-6.Raise a number to a certain power.
-7.Reverse an array.
-8.Determine if a string contains any letters.
+### The 10 problems are as follows:
+1. Find the minimum value in an array.
+2. Find the average value of an array.
+3. Determine if a number is prime or composite.
+4. Find the factorial of a number.
+5. Find the nth number in the Fibonacci sequence.
+6. Raise a number to a certain power.
+7. Reverse an array.
+8. Determine if a string contains any letters.
 9. Find Binomial Coefficient.
 10. Find Greatest Common Divisor (GCD).
 
