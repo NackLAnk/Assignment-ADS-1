@@ -1,8 +1,8 @@
 # Assignment-ADS-1
 
-This program contains eight problems that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
+> This program contains eight problems that users can choose to solve. The program uses a scanner to read input from the user, and each problem has a different prompt.
 
-To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
+> To run the program, the user must compile and run the Main.java file. Upon running, the user is prompted with a welcome message and asked to select a problem task by > typing in the corresponding number. After selecting a problem, the user is prompted with a specific question and must input their answer into the console.
 
 ### The 10 problems are as follows:
 1. Find the minimum value in an array.
@@ -37,15 +37,15 @@ public class Problem1 {
 ```
 # Problem Class
 
-The Problem1 class is a utility class for finding the minimum value in an array.
+> The Problem1 class is a utility class for finding the minimum value in an array.
 
 # Methods
 
-This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
+> This method takes in two parameters, an integer `n` and an integer array `arr`. It returns the minimum value in the array `arr`.
 
-`n`: the size of the array * `arr`
-`arr`: the integer array containing the values to search for the minimum
-If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
+1. > `n`: the size of the array * `arr`
+2. > `arr`: the integer array containing the values to search for the minimum
+3. > If the size of the array is 1, the method returns the only element in the array. Otherwise, it calls itself recursively with the size of the array reduced by one and the array itself to find the minimum value.
 ### Example usage of code:
 ``` java
 int[] array = {5, 8, 3, 1, 9, 2};
@@ -64,7 +64,7 @@ public class Problem2 {
     }
 }
 ```
-To use this code, you need to have an array of integers. You can call the `getAverage` method and pass the array as an argument. The method will calculate the average of the elements in the array and return it as a double.
+> To use this code, you need to have an array of integers. You can call the `getAverage` method and pass the array as an argument. The method will calculate the average of the elements in the array and return it as a double.
 ### Example usage:
 ``` java
 int[] myArray = {1, 2, 3, 4, 5};
